@@ -17,4 +17,4 @@ Tech Test Practice written in week 10 as part of the course at Makers Academy
 * Run bundle install
 
 ## Use
-![picture](https://ibb.co/dCa40v)
+<img width="1090" alt="screen shot 2017-06-12 at 12 44 40" src="https://user-images.githubusercontent.com/26028408/27032778-76c2265e-4f6e-11e7-9ebe-5f3f5188597b.png">
