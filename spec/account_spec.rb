@@ -25,7 +25,7 @@ describe Account do
     it 'Creates a hash of the transaction and add it to the transactions array' do
       account.deposit(300)
       expect(subject.transactions).not_to be_empty
-      expect(subject.transactions).to eq([{:date=> Time.now.strftime('%d/%m/%Y'), :credit=>300, :debit=>"N/A", :balance=>300}])
+      expect(subject.transactions).to eq([{ date: Time.now.strftime('%d/%m/%Y'), credit: 300, debit: 'N/A', balance: 300 }])
     end
   end
 
@@ -39,7 +39,7 @@ describe Account do
       account.deposit(1000)
       account.withdraw(300)
       expect(subject.transactions).not_to be_empty
-      expect(subject.transactions[-1]).to eq({:date=> Time.now.strftime('%d/%m/%Y'), :credit=>"N/A", :debit=>300, :balance=>700})
+      expect(subject.transactions[-1]).to eq(date: Time.now.strftime('%d/%m/%Y'), credit: 'N/A', debit: 300, balance: 700)
     end
   end
 end
