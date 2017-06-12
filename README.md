@@ -17,4 +17,4 @@ Tech Test Practice written in week 10 as part of the course at Makers Academy
 * Run bundle install
 
 ## Use
-![image](http://imgur.com/a/2TQFd)
+![picture](http://imgur.com/a/2TQFd)
