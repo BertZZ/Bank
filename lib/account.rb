@@ -7,10 +7,14 @@ class Account
   end
 
   def deposit(number)
-    @balance = @balance + number
+    @balance += number
+    transaction = { date: Time.now.strftime('%d/%m/%Y'), credit: number, debit: 'N/A', balance: @balance }
+    @transactions << transaction
   end
 
   def withdraw(number)
-    @balance = @balance - number
+    @balance -= number
+    transaction = { date: Time.now.strftime('%d/%m/%Y'), credit: 'N/A', debit: number, balance: @balance }
+    @transactions << transaction
   end
 end

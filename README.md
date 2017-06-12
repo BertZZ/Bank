@@ -10,3 +10,10 @@ Tech Test Practice written in week 10 as part of the course at Makers Academy
 * Deposits, withdrawal.
 * Account statement (date, amount, balance) printing.
 * Data can be kept in memory (it doesn't need to be stored to a database or anything).
+
+## Quick Start
+
+* Clone or pull this repository
+* Run bundle install
+
+## Use
