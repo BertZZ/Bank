@@ -1,6 +1,3 @@
-require "account"
-require "transactions"
-
 class Printer
   def print(transactions)
     puts "date || credit || debit || balance"
