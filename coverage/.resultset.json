@@ -54,14 +54,14 @@
         1,
         null,
         1,
-        9,
-        9,
+        10,
+        10,
         null,
         null,
         1,
-        7,
-        7,
-        7,
+        9,
+        9,
+        9,
         null,
         null,
         1,
@@ -83,6 +83,16 @@
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/bertz/Projects/Bank/lib/printer.rb": [
@@ -92,11 +102,18 @@
         1,
         null,
         1,
+        2,
+        null,
+        null,
         1,
+        0,
+        0,
+        0,
+        null,
         null,
         null
       ]
     },
-    "timestamp": 1497266821
+    "timestamp": 1497267762
   }
 }
