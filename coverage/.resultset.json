@@ -1,0 +1,34 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/bertz/Projects/Bank/spec/account_spec.rb": [
+
+      ],
+      "/Users/bertz/Projects/Bank/spec/printer_spec.rb": [
+
+      ],
+      "/Users/bertz/Projects/Bank/spec/user_spec.rb": [
+        1,
+        null,
+        1,
+        3,
+        2,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/bertz/Projects/Bank/lib/user.rb": [
+        1,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1497261584
+  }
+}
