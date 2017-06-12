@@ -22,6 +22,6 @@ class Account # It knows about the that have occured
   end
 
   def print
-    @printer.print(@history)
+    @printer.print(@transaction.history)
   end
 end
