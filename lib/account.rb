@@ -1,5 +1,5 @@
-require 'transactions'
-require 'printer'
+require_relative 'transactions'
+require_relative 'printer'
 
 class Account # It knows about the that have occured
   attr_reader :balance, :printer, :transaction
