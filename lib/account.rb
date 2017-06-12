@@ -1,5 +1,6 @@
-class Account
-  attr_reader :balance, :transactions
+class Account # It knows about the transactions that have occured
+  attr_reader :balance
+  attr_accessor :transactions
 
   def initialize
     @balance = 0
