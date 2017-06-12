@@ -1,15 +1,10 @@
-require_relative 'account'
+require "account"
+require "transactions"
 
 class Printer
-  attr_reader :transactions
-
-  def initialize(account)
-    @transactions = account.transactions
-  end
-
-  def print
+  def print(transactions)
     puts "date || credit || debit || balance"
-    @transactions.reverse.each do |transaction|
+    transactions.each do |transaction|
       puts "#{transaction[:date]} || #{transaction[:credit]} || #{transaction[:debit]} || #{transaction[:balance]}"
     end
   end

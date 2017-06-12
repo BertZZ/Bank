@@ -1,21 +1,27 @@
-class Account # It knows about the transactions that have occured
-  attr_reader :balance
-  attr_accessor :transactions
+require 'transactions'
+require 'printer'
 
-  def initialize
+class Account # It knows about the that have occured
+  attr_reader :balance, :printer, :transaction
+
+
+  def initialize(transaction: Transaction.new, printer: Printer.new)
     @balance = 0
-    @transactions = []
+    @printer = printer
+    @transaction = transaction
   end
 
   def deposit(number)
     @balance += number
-    transaction = { date: Time.now.strftime('%d/%m/%Y'), credit: number, debit: 'N/A', balance: @balance }
-    @transactions << transaction
+    @transaction.deposit(number, @balance)
   end
 
   def withdraw(number)
     @balance -= number
-    transaction = { date: Time.now.strftime('%d/%m/%Y'), credit: 'N/A', debit: number, balance: @balance }
-    @transactions << transaction
+    @transaction.withdraw(number, @balance)
+  end
+
+  def print
+    @printer.print(@history)
   end
 end
